@@ -1,0 +1,33 @@
+<script>
+    //Usando modo váriaveis 
+    var car1 = "Saab";
+    var car2 = "Volvo";
+    var car3 = "BMW";
+    document.write("<h2>Usando Estrutura de variareis</h2>");
+    document.write(car1+"<br/>"+car2+"<br>"+car3);
+   
+    //Usando a estrutura array (lista)
+    document.write("<h2>Usando Estrutura de array </h2>")
+    var carros = ["Saab", "Volvo", "BMW"];
+    document.write(carros);
+   
+    //a palavra new cria novo objeto
+    document.write("<h2>Usando Estrutura de array com palavra reservada New </h2>")
+    var carros2 = new Array("Saab", "Volvo", "BMW");
+    document.write(carros2);
+
+    //Matriz tem como lógica a chamada da lista.
+    document.write("<h2>Usando Estrutura de Array chamada dentro da matriz</h2>")
+    var carros3 = ["Saab", "Volvo", "BMW"];
+    document.write("<h3>Chamando a informação na posição 0 </h3>")
+    document.write(carros3[0]);
+
+    // também podemos adicionar valores dentro do array por meio de posiçao
+    document.write("<h2>Adicionando dados via array</h2>")
+    var carros4 = ["Saab", "Volvo", "BMW"];
+    document.write(carros4+"<br>");
+    document.write("<h2>Inserindo na posição 2 </h2><br>");
+    carros4[2] = "Gol";
+    document.write(carros4+"<br>");
+
+</script>

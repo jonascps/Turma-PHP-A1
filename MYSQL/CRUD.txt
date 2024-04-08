@@ -1,0 +1,24 @@
+CREATE -> cria 
+DATABASE -> Banco de dados
+TABLE -> tabela
+----- CRUD ------
+INSERT -> Isere
+SELECT -> Seleciona
+UPDATE -> Altera
+DELETE -> Delete
+
+------ ATRIBUTOS ----
+ * -> TUDO
+ , -> novo campo
+ AND -> e
+ OR -> ou
+ () -> isolamento/priorizador
+ 
+ 
+---- FUNÇÕES ------
+ COUNT -> conta
+ WHERE -> Condicional
+ INNER JOIN -> Uni tabelas
+ ORDER BY -> Ordena A partir
+ ASC -> CRESCENTE
+ DESC -> DECRECENTE	

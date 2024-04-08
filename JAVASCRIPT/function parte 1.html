@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!--
+    Capturando eventos.
+-->
+<html>
+
+<head>
+    <title>Eventos via formulario</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body align="center">
+    <h1> Forumlario</h1>
+    <h2>onfocus - </h2>
+    <h2>onblur - </h2>
+    <h2>onchange - </h2>
+    <br>
+    <h3>OBS: Caso usar alert em onfocus ele fica em loop infinito porque ele foca novamente o input</h3>
+    <br>
+    <p>Clica na caixa: </p>
+    <input onfocus="console.log('Evento disparado do focus, você clicou no input')" type="text">
+    <br>
+    <br>
+    <p>Clica e clique fora da caixa</p>
+    <input onblur="alert('Evento disparado do focus, você clicou no input')" type="text">
+    <br>
+    <br>
+    <p>Selecione:</p>
+    <select onchange="alert('você selecionou')" id="valorSelect" name="">
+    <option>--- Selecione ---</option>
+    <option>1º Opção</option>
+    <option>2º opção</option>
+    </select> </body>
+
+</html>

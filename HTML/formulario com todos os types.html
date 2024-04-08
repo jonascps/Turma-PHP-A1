@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario</title>
+</head>
+
+<body>
+    <div align="center">
+
+        <h2>Meu Primeiro Formulario </h2>
+        <br>
+
+        <form>
+
+            <h3>Cadastro dos Dados:</h3>
+            <fieldset>
+                <div>
+                    <label>Nome:</label>
+                    <input type="text" name="nome">
+                </div>
+                <br>
+                <div>
+                    <label>Idade:</label>
+                    <input type="number" name="idade" step="0.01">
+                </div>
+                <br>
+                <div>
+                    <label>Telefone:</label>
+                    <input type="number" name="telefone">
+                </div>
+				<div>
+                    <label>nascimento:</label>
+                    <input type="date" name="data">
+                </div>
+				<div>
+                    <label>Hora:</label>
+                    <input type="time" name="hora">
+                </div>
+                <br>
+                <div>
+                    <label>Sexo:</label><br>
+                    <input type="radio" name="sexo">Feminino
+                    <input type="radio" name="sexo">Masculino <br>
+                </div>
+             <br/>
+				 <div>
+                    <label>Sexo:</label><br>
+                    <input type="checkbox" name="sexo">Feminino
+                    <input type="checkbox" name="sexo">Masculino <br>
+                </div>
+                <div>
+                    <label>Endereço:</label>
+                    <input type="text" name="endereco">
+                </div>
+                <br>
+                <div>
+                    <label>Email:</label>
+                    <input type="email" name="email">
+                </div>
+                <br>
+                <div>
+                    <label>Senha:</label>
+                    <input type="password" name="senha">
+                </div>
+                <div>
+                    <label>Pesquisar:</label>
+                    <input type="search" name="senha">
+                </div>
+                <br>
+                <div>
+                    <label>Cidade:</label>
+
+                    <select>
+                            <option name="brasilia" value="DF">Brasília</option>
+                            <option name="goias" value="GO">Goias</option>
+                            <option name="sao_paulo" value="SP">São Paulo</option>
+                            <option name="outro" value="outro">Outra Cidade</option>
+                        </select>
+
+                </div>
+
+                <br/>
+                <input type="submit" value="Enviar">
+            </fieldset>
+        </form>
+    </div>
+
+</body>
+
+</html>

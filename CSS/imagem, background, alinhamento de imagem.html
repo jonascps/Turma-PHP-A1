@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Estilo de Texto</title>
+    <style type="text/css">
+        .cor-letra {
+            /*"pode ser" background: blue;*/
+            background-color: blue;
+        }
+        /*podemos inserir fotos*/
+        
+        body {
+            text-align: center;
+            background-image: url('./imagens/darth.jpg');
+            background-repeat: no-repeat;
+            /* podemos repetir várias vezes a mesma imagem
+            background-repeat: repeat-y ou repeat-x ou no-repeat
+            */
+            /* fixa a imagem enquanto o rolamento da página. fixed ou 
+            scroll (normal não acompanha a página)*/
+            
+            /* pbackground-attachment: scroll;osiciona com nomes (right; center), (left; center) (center;center) ou tamanho */
+            background-position: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="titulo">
+        <h2>Background</h2>
+        <p class="cor-letra ">Podemos pintar a linha do texto</p>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<select id="cliente">
+	<option value="a">Opção A </option>
+	<option value="b">Opção B  </option>
+</select>
+<select id="funcionario" onblur="pegar()">
+	<option value="c">Opção C </option>
+	<option value="d">Opção D </option>
+</select>
+	<input value="" id="data" name="data" type="text">
+<script>
+function pegar(){
+	var nome_cliente = document.getElementById('cliente').value;
+    var nome_funcionario = document.getElementById('funcionario').value;
+	
+    if((nome_cliente == 'a') && (nome_funcionario == 'c')){    
+		var coloca = 'A+b';
+		document.getElementById("data").value = coloca;
+	}
+    else if ((nome_cliente == 'a') && (nome_funcionario == 'd')){
+		var coloca = 'A+d';
+		document.getElementById("data").value = coloca;
+	} else if ((nome_cliente == 'b') && (nome_funcionario == 'c')){
+		var coloca = 'B+C';
+		document.getElementById("data").value = coloca;
+	}
+	else if ((nome_cliente == 'b') && (nome_funcionario == 'd')){
+		var coloca = 'b+d';
+		document.getElementById("data").value = coloca;
+	}
+}
+</script>

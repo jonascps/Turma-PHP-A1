@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>Calculadora</title>
+    </head>
+    <body>
+        <h1>Calculadora</h1>
+        <h3><button onclick="modulo()">Modulo</button></h3>
+        <h3><button onclick="raiz()">Raiz</button></h3>
+        <h3><button onclick="raio()">Raio</button></h3>
+        <h3><button onclick="porcentagem()">Porcentagem</button></h3>
+    <body>
+    </html>
+    <script> 
+    function modulo(){
+       alert("Você digitou escolheu Modulo");
+       var a = parseInt(prompt ("Digite o primeiro Número"));
+       var b = parseInt(prompt ("Digite o segundo Número"));
+        var r = a%b;
+        alert ("Resultado é: "+r);
+    }
+    function raiz(){
+        alert("Você digitou escolheu Raiz");
+       var a = parseInt(prompt ("Digite o primeiro Número"));     
+        var r = Math.sqrt(a) ;     
+        alert ("Resultado é: "+r);
+    }
+    function raio(){
+        alert("Você digitou escolheu Raio");
+       var a = parseInt(prompt ("Digite o Raio CM"));     
+       var r = 2 * Math.PI * a ;     
+        alert ("Resultado é: "+r);
+    }
+    function porcentagem(){
+        alert("Você digitou escolheu Porcentagem");
+       var a = parseInt(prompt ("Quantos % quer? "));     
+       var b = parseInt(prompt ("De Quanto?"));  
+       var r = (a*b)/100;
+        alert ("Resultado é: "+r);
+    }
+
+    </script>

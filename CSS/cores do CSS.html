@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Fontes e Cores</title>
+    <style type="text/css">
+        table,
+        tr,
+        td {
+            border: 1px solid blue;
+            text-align: center;
+        }
+        
+        h1 {
+            font-stretch: expanded;
+            font-size: 35px;
+        }
+        
+        button {
+            width: 80px;
+            height: 40px;
+        }
+        
+        h2 {
+            /* caso não tive Apple css aplica cursive */
+            font-family: Apple Chancery, cursive;
+        }
+        
+        #p1 {
+            font-style: normal;
+            font-style: italic;
+        }
+        
+        #p2 {
+            font-weight: bold;
+        }
+        
+        #p3 {
+            font-variant: small-caps
+        }
+    </style>
+</head>
+
+<body>
+    <div id="titulo" align="center">
+        <h1>Cores para CSS</h1>
+        <h3>Pode se utilizar 3 valores para Cor</h3>
+        <table>
+            <tr>
+                <td>
+                    <p>Nome</p>
+                </td>
+                <td>
+                    <p>RGB (sistema de cores aditivas) </p>
+                </td>
+                <td>
+                    <p>Hexadecimal </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Blue</p>
+                </td>
+                <td>
+                    <p>0 0 255</p>
+                </td>
+                <td>
+                    <p>#0000FF</p>
+                </td>
+            </tr>
+        </table>
+        <br>
+        <h1>Fontes</h1>
+        <h2>Podemos utilizar várias fontes </h2>
+        <p id="p1">Dessa forma</p>
+        <p id="p2">Como também assim</p>
+        <p id="p3">E assim</p>
+        <form method="get" action="https://www.flextool.com.br/tabela_cores.html">
+            <button type="submit">+ Cores</button>
+        </form>
+        <br>
+        <form method="get" action="https://www.w3.org/Style/Examples/007/fonts.pt_BR.html">
+            <button type="submit">+ Fontes</button>
+        </form>
+    </div>
+</body>
+
+</html>

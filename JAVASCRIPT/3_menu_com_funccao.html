@@ -1,0 +1,73 @@
+<html>
+    <head>
+        <title>Menu de Opção com Função</title>
+    </head>
+    <body>
+        <h1>Menu</h1>
+        <h3><button onclick="calculdora()"> 1º Calculadora</button></h3>
+        <h3><button onclick="alertado()">2º Alert</button></button></h3>
+        <h3><button onclick="mostrartags()">3º Mostrar Tags</button></button></h3>
+
+    <body>
+    </html>
+
+<script>
+ 
+    function calculdora(){
+        var a = prompt("Menu: SOMA ou SUBTRACAO? ");
+        
+        if (a=="soma"){
+         var b = parseInt(prompt ("Digite o primeiro Nùmero"));
+         var c = parseInt(prompt ("Digite o segundo Nùmero"));
+            var d = b+c;
+            alert ("Soma é:"+d);
+        }
+        else if (a=="subtracao"){
+            var b = parseInt(prompt ("Digite o primeiro Nùmero"));
+            var c = parseInt(prompt ("Digite o segundo Nùmero"));
+            var d = b-c;
+            alert ("Subtracao é:"+d);
+        }
+        else {
+           alert ("verique se digitou corretamente o nome que deseja.")
+        }
+    }
+    function alertado(){
+        var a = prompt ("Deseja usar ALERT, DOCUMENT ou CONSOLE");
+        if (a=="alert"){
+         var b = prompt ("Digite a mensagem");         
+          alert ("A mensagem é: "+b);
+        }
+        else if (a=="document"){
+            var b = prompt ("Digite a mensagem");           
+            document.write ("A mensagem é:"+b);
+        }
+        else if (a=="console"){
+            var b = prompt ("Digite a mensagem");           
+            console.log ("A mensagem é:"+b);
+        }
+        else {
+           alert ("verique se digitou corretamente o nome que deseja.")
+        }
+    }
+    function mostrartags(){
+        var a = prompt ("Deseja Mostrar que tag? P, h1, formulario, tabela?");
+        if (a=="p"){
+            document.write ("<p> usando Paragrafo </p>");
+        }
+        else if (a=="h1"){
+                     
+            document.write ("<h1> usando H1 </h1>");
+        }
+        else if (a == "formulario") {
+            document.write ('<form> <h2> Isso é um formulario </br> <p>Nome: <input type="text"></p> <br> <button>Enviar</button> </form>');
+        }
+        else if (a == "tabela") {
+            document.write ('<table border="2"> <th colspan="2"><h2> Isso é uma tabela </th><tr><td>Item 1</td><td>Item 2</td></tr> </th><tr><td>Café</td><td>Açucar</td></tr>');
+        }
+        else{
+            alert ("verique se digitou corretamente o nome que deseja.");
+        }
+    }
+    
+</script>

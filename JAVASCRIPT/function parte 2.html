@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!--
+    Capturando eventos.
+-->
+<html>
+
+<head>
+    <title>Capturando Eventos teclado</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body align="center">
+    <script>
+        function acao() {
+            alert('Você digitou');
+        }
+
+        function acao2() {
+            alert('você digitou algo');
+        }
+
+        function acao3() {
+            alert('você digitou caractere ou número');
+        }
+    </script>
+    <h2>Evento Parte 2 - Teclado</h2>
+    <h3>Telado</h3>
+    <p>onkeydown - dispara alert quando digitar algo</p>
+    <p>onkeyup - dispara alert depois de digitar algo</p>
+    <p>onkeypress - quando digitado algum caracter, número ou espaço (algumas versões não o suportam e podem executar como onkeydown)</p>
+    <br>
+    <h2> Digite algo para acionar o evento</h2>
+    <input onkeydown="acao()" type="text">
+    <br>
+    <h2> Digite algo para acionar o evento 2 </h2>
+    <input onkeyup="acao2()" type="text">
+    <br>
+    <h2> Digite algum caractere ou numero para acionar o evento 3</h2>
+    <input onkeypress="acao3()" type="text">
+</body>
+
+</html>

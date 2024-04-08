@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <title>Quiz 2</title>
+    </head>
+    <body>
+        <h1> Quiz 2 perguntas e Respostas</h1>
+        <h3><button onclick="quiz()"> 1º Clique para Iniciar</button></h3>
+    <body>
+    </html>
+
+    <script>
+        function quiz(){         
+            var i = 0;
+            alert ("Crie uma pergunta, Clique no OK para iniciar ");
+            var a = prompt ("Digite a primeira pergunta")
+            var b = prompt ("Qual a resposta? ");
+            var c = prompt ("Digite a segunda pergunta")
+            var d = prompt ("Qual a resposta? ");
+            var e = prompt ("Digite a terceira pergunta")
+            var f = prompt ("Qual a resposta? ");
+            var g = prompt ("Digite a quarta pergunta")
+            var h = prompt ("Qual a resposta? ");
+          
+            var cont = prompt ("Pergunta 1:"+a);
+               if (cont==b){
+                alert ("Você acertou");
+                ++i;                
+               }else{
+                alert ("Você errou"); 
+               }
+               var cont2 = prompt ("Pergunta 2:"+c);
+               if (cont2==d){
+                alert ("Você acertou");
+                ++i;                
+               }else{
+                alert ("Você errou"); 
+               }
+               var cont3 = prompt ("Pergunta 3:"+e);
+               if (cont3==f){
+                alert ("Você acertou");
+                ++i;                
+               }else{
+                alert ("Você errou"); 
+               }
+               var cont4 = prompt ("Pergunta 4:"+g);
+               if (cont4==h){
+                alert ("Você acertou");
+                ++i;                
+               }else{
+                alert ("Você errou"); 
+               }
+               alert("total acertadas: "+i);   
+        }
+       
+    </script>

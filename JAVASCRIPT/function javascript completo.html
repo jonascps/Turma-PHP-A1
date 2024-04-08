@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!--
+    Capturando eventos.
+-->
+<html>
+
+<head>
+    <title>Capturando eventos mouse</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body align="center">
+    <script>
+        function acao() {
+            alert('Você clicou na caixa vermelha');
+        }
+
+        function acao2() {
+            alert('você clicou duas vezes na caixa azul');
+        }
+
+        function acao3() {
+            alert('você clicou e soltou na caixa verde');
+        }
+
+        function acao4() {
+            alert('você passou pela caixa preta');
+        }
+
+        function acao5() {
+            alert('você passou pela caixa amarela e saiu');
+        }
+    </script>
+    <h2>Evento Parte 1 - Mouse</h2>
+    <h3>Mouse</h3>
+    <p>onclick - evento é realizado após o click</p>
+    <p>ondblclick - evento é relaizado após dois clicks</p>
+    <p>onmouseup - eento é realizado quando o click é solto</p>
+    <p>onmouseout - evento é realizado quando mouse sai por ele</p>
+    <p>onmouseover - evento é realizado quando mouse passa por ele</p>
+
+    <h2> Clique na caixa vermelha</h2>
+    <div onclick="acao()" style="background: red; padding:50px;">
+    </div>
+    <h2>Clique duas Vezes rapido na caixa Azul</h2>
+    <div ondblclick="acao2()" style="background: blue; padding:50px;">
+    </div>
+    <h2>Clique e segure após soltar função disparada</h2>
+    <div onmouseup="acao3()" style="background: green; padding:50px;">
+    </div>
+
+    <h2>Passe e da caixa amarela</h2>
+    <div onmouseout="acao5()" style="background: yellow; padding:50px;">
+    </div>
+    <h2>Passe pela caixa preta</h2>
+    <div onmouseover="acao4()" style="background: black; padding:50px;">
+    </div>
+</body>
+
+</html>
